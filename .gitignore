@@ -1,0 +1,9 @@
+vendor
+application/controllers/Test.php
+application/config/production
+application/config/development
+cms/application/config/production
+cms/application/config/development
+assets/photo
+assets/file
+assets/pdf
