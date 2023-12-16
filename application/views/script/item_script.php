@@ -28,7 +28,7 @@ $(document).ready(function () {
             var caption = $(this).attr('data-title');
             var author = $(this).attr('data-author');
             var imagedata = $("#general-modal-iframe").contents().find('.imagedata-' + id).data();
-            tinymce.get(id_tinymce).execCommand('mceInsertContent', false, '<img width="500" height="500" src="' + '<?php echo $this->session_login['session_store']['domain'] ?>/' + imagedata.src + '" data-caption="' + caption + '" data-author="' + author + '">');
+            tinymce.get(id_tinymce).execCommand('mceInsertContent', false, '<img width="500" height="500" src="' + '<?php echo base_url_fe() ?>/' + imagedata.src + '" data-caption="' + caption + '" data-author="' + author + '">');
             $('#general-modal').modal('hide');
         });
     });

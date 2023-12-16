@@ -34,7 +34,7 @@
                       ?>
                     <tr>
                         <td><?php echo $no; ?></td>
-                        <td><img src="<?php echo $this->session_login['session_store']['domain'].'/'.str_replace('/ori_','/100x100_',$value->image) ?>" alt=""></td>
+                        <td><img src="<?php echo base_url_fe().'/'.str_replace('/ori_','/100x100_',$value->image) ?>" alt=""></td>
                         <td><?php echo $value->name; ?></td>
                         <td><?php echo $value->price; ?></td>
                         <td>

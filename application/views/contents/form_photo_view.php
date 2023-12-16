@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 col-sm-6">
                 <div class="form-group">
-                    <img style="background-color:#ffdab3" src="<?php echo isset($data->url)?$this->session_login['session_store']['domain'].'/'.$data->url:'' ?>" alt="<?php echo isset($data->title)?$data->title:'' ?>" class="img-responsive img-thumbnail">
+                    <img style="background-color:#ffdab3" src="<?php echo isset($data->url)?base_url_fe().'/'.$data->url:'' ?>" alt="<?php echo isset($data->title)?$data->title:'' ?>" class="img-responsive img-thumbnail">
                 </div>
             </div>
             <div class="col-md-6 col-sm-6">

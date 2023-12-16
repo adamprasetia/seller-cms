@@ -208,3 +208,8 @@ function generateRandomString($length = 10) {
     }
     return $randomString;
 }
+function base_url_fe() {
+    $base_url = base_url();
+    $base_url = str_replace('dealer-cms','dealer-fe', $base_url);
+    return $base_url;
+}

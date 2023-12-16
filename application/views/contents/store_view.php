@@ -19,9 +19,9 @@
                 <thead>
                     <tr>
                         <th width="50">No</th>
+                        <th>Logo</th>
                         <th>Title</th>
                         <th>Domain</th>
-                        <th>Storage</th>
                         <th width="100">Aksi</th>
                     </tr>
                 </thead>
@@ -32,9 +32,9 @@
                       ?>
                     <tr>
                         <td><?php echo $no; ?></td>
+                        <td><img src="<?php echo base_url_fe().'/'.$value->logo ?>" alt=""></td>
                         <td><?php echo $value->title; ?></td>
                         <td><?php echo $value->domain; ?></td>
-                        <td><?php echo $value->storage; ?></td>
                         <td>
                             <a class="btn btn-default" href="<?php echo base_url($table.'/edit/'.$value->id); ?>"><i class="fa fa-edit"></i></a>
                             <button class="btn btn-default" type="button" name="button" data-url="<?php echo base_url($table.'/delete/'.$value->id); ?>" onclick="return deleteData(this)"><i class="fa fa-trash"></i></button>

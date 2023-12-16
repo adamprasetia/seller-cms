@@ -20,7 +20,7 @@ img {max-width: 100%;height: auto;}.item {width: 300px;min-height: 120px;max-hei
         <div class="row">
             <?php $i=1+$offset;foreach ($data as $row): ?>
             <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom:10px">
-                <img src="<?php echo $this->session_login['session_store']['domain'].'/'.str_replace('/ori_','/320x240_',$row->url) ?>" alt="" style="background-color:#3c8dbc" class="img-responsive img-thumbnail item" title="<?php echo htmlentities($row->title) ?>">
+                <img src="<?php echo base_url_fe().'/'.str_replace('/ori_','/320x240_',$row->url) ?>" alt="" style="background-color:#3c8dbc" class="img-responsive img-thumbnail item" title="<?php echo htmlentities($row->title) ?>">
                 <div style="position:absolute;top:10px;margin-left:10px">
                     <?php if ($row->title): ?>
                         <label class="label label-primary"><?php echo word_limiter($row->title,2) ?></label>

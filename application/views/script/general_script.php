@@ -255,7 +255,7 @@ $('.datetimepicker').datepicker({
             if(target == 'gallery'){
               $('.gallery').append(gallery_view);
             }else{
-              $('#'+target+'_img').attr('src','<?php echo @$this->session_login['session_store']['domain'] ?>/'+src);
+              $('#'+target+'_img').attr('src','<?php echo @base_url_fe() ?>/'+src);
               $('#'+target).val(src);   
               $('#'+target+'_btn').show();   
             }

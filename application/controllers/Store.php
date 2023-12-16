@@ -40,7 +40,6 @@ class Store extends MY_Controller {
 	{
 		$this->form_validation->set_rules('title', 'Title', 'trim|required');
 		$this->form_validation->set_rules('domain', 'Domain', 'trim|required');
-		$this->form_validation->set_rules('storage', 'Storage', 'trim|required');
 	}
 	
 	private function _set_data($type = 'add')
@@ -48,14 +47,14 @@ class Store extends MY_Controller {
 		$title 		= $this->input->post('title');
 		$desc 		= $this->input->post('desc');
 		$domain 		= $this->input->post('domain');
-		$storage 		= $this->input->post('storage');
+		$logo 		= $this->input->post('logo');
 		$image 		= $this->input->post('image');
 
 		$data = array(
 			'title' => $title,
 			'desc' => $desc,
-			'storage' => $storage,
 			'domain' => $domain,
+			'logo' => $logo,
 			'image' => $image,
 		);
 

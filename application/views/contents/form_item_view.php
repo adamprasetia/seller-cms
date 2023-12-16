@@ -15,7 +15,7 @@
                 <input type="button" name="choose" class="btn btn-default btn-sm btn-dialog" value="Pilih Image" data-title="Pilih Image Produk" data-target="image_item" data-url="<?php echo base_url('photo').'?modals=true'; ?>">
                 <div class="media">
                     <div class="media-left">
-                        <img id="image_item_img" src="<?php echo !empty($data->image)?$this->session_login['session_store']['domain'].'/'.$data->image:''; ?>" class="media-object" style="width: 300px;height: auto;border-radius: 10px;box-shadow: 0 1px 3px rgba(0,0,0,.15);background-color:#3c8dbc">
+                        <img id="image_item_img" src="<?php echo !empty($data->image)?base_url_fe().'/'.$data->image:''; ?>" class="media-object" style="width: 300px;height: auto;border-radius: 10px;box-shadow: 0 1px 3px rgba(0,0,0,.15);background-color:#3c8dbc">
                         <input type="hidden" id="image_item" name="image" value="<?php echo isset($data->image)?$data->image:''; ?>">
                     </div>
                 </div>
