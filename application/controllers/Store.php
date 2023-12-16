@@ -49,6 +49,8 @@ class Store extends MY_Controller {
 		$domain 		= $this->input->post('domain');
 		$logo 		= $this->input->post('logo');
 		$image 		= $this->input->post('image');
+		$phone 		= $this->input->post('phone');
+		$pic 		= $this->input->post('pic');
 
 		$data = array(
 			'title' => $title,
@@ -56,6 +58,8 @@ class Store extends MY_Controller {
 			'domain' => $domain,
 			'logo' => $logo,
 			'image' => $image,
+			'phone' => $phone,
+			'pic' => $pic,
 		);
 
 		if($type == 'add'){

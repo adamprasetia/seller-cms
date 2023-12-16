@@ -39,6 +39,14 @@
                 <label>Domain</label>
                 <input type="text" id="domain" name="domain" class="form-control" value="<?php echo isset($data->domain)?$data->domain:'' ?>">
             </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" id="phone" name="phone" class="form-control" value="<?php echo isset($data->phone)?$data->phone:'' ?>">
+            </div>
+            <div class="form-group">
+                <label>PIC</label>
+                <input type="text" id="pic" name="pic" class="form-control" value="<?php echo isset($data->pic)?$data->pic:'' ?>">
+            </div>
         </div>
         <div class="box-footer">
             <button type="button" class="btn_action btn btn-primary" data-redirect="<?php echo base_url($table.'/index').get_query_string() ?>" data-action="<?php echo $action ?>" data-form="#form_data" data-idle="<i class='fa fa-save'></i> Simpan" data-process="Menyimpan..."><i class='fa fa-save'></i> Simpan</button>
