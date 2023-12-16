@@ -16,6 +16,11 @@
                 <textarea type="text" id="desc" rows="5" name="desc" class="form-control"><?php echo isset($data->desc)?$data->desc:'' ?></textarea>
             </div>
             <div class="form-group">
+                <label>Keyword</label>
+                <textarea type="text" id="keyword" rows="5" name="keyword" class="form-control"><?php echo isset($data->keyword)?$data->keyword:'' ?></textarea>
+                <small>Note : Gunakan comma (,) untuk pemisah antar kata, gunakan kata kunci yang tepat supaya cocok dengan kata kunci pencarian di search engine (google)</small>
+            </div>
+            <div class="form-group">
                 <label>Logo</label>
                 <input type="button" name="choose" class="btn btn-default btn-sm btn-dialog" value="Pilih Logo" data-title="Pilih Logo Store" data-target="logo_item" data-url="<?php echo base_url('photo').'?modals=true'; ?>">
                 <div class="media">

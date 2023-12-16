@@ -46,6 +46,7 @@ class Store extends MY_Controller {
 	{
 		$title 		= $this->input->post('title');
 		$desc 		= $this->input->post('desc');
+		$keyword 		= $this->input->post('keyword');
 		$domain 		= $this->input->post('domain');
 		$logo 		= $this->input->post('logo');
 		$image 		= $this->input->post('image');
