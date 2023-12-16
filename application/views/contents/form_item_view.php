@@ -22,7 +22,7 @@
             </div>
             <div class="form-group">
                 <label>Deskripsi</label>
-                <textarea type="text" id="desc" rows="5" name="desc" class="form-control"><?php echo isset($data->desc)?htmlentities($data->desc):'' ?></textarea>
+                <textarea type="text" id="desc" rows="5" name="desc" class="form-control"><?php echo isset($data->desc)?$data->desc:'' ?></textarea>
             </div>
             <div class="form-group">
                 <label>Harga</label>

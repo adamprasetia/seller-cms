@@ -9,7 +9,7 @@
             <div class="form-group">
                 <input type="hidden" id="id" name="id" value="<?php echo isset($data->id)?$data->id:'' ?>">
                 <label>Nama Modul *</label>
-                <input type="text" id="name" name="name" class="form-control" value="<?php echo isset($data->name)?htmlentities($data->name):'' ?>">
+                <input type="text" id="name" name="name" class="form-control" value="<?php echo isset($data->name)?$data->name:'' ?>">
             </div>
             <div class="form-group">
                 <label>Parent</label>
@@ -31,15 +31,15 @@
             </div>
             <div class="form-group">
                 <label>Link</label>
-                <input type="text" id="link" name="link" class="form-control" value="<?php echo isset($data->link)?htmlentities($data->link):'' ?>">
+                <input type="text" id="link" name="link" class="form-control" value="<?php echo isset($data->link)?$data->link:'' ?>">
             </div>
             <div class="form-group">
                 <label>Icon</label>
-                <input type="text" id="icon" name="icon" class="form-control" value="<?php echo isset($data->icon)?htmlentities($data->icon):'' ?>">
+                <input type="text" id="icon" name="icon" class="form-control" value="<?php echo isset($data->icon)?$data->icon:'' ?>">
             </div>
             <div class="form-group">
                 <label>Order</label>
-                <input type="number" id="order" name="order" class="form-control" value="<?php echo isset($data->order)?htmlentities($data->order):'' ?>">
+                <input type="number" id="order" name="order" class="form-control" value="<?php echo isset($data->order)?$data->order:'' ?>">
             </div>
         </div>
         <div class="box-footer">

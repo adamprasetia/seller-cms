@@ -46,12 +46,14 @@ class Store extends MY_Controller {
 	private function _set_data($type = 'add')
 	{
 		$title 		= $this->input->post('title');
+		$desc 		= $this->input->post('desc');
 		$domain 		= $this->input->post('domain');
 		$storage 		= $this->input->post('storage');
 		$image 		= $this->input->post('image');
 
 		$data = array(
 			'title' => $title,
+			'desc' => $desc,
 			'storage' => $storage,
 			'domain' => $domain,
 			'image' => $image,

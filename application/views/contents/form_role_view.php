@@ -9,7 +9,7 @@
             <div class="form-group">
                 <input type="hidden" id="id" name="id" value="<?php echo isset($data->id)?$data->id:'' ?>">
                 <label>Nama Hak Akses *</label>
-                <input type="text" id="name" name="name" class="form-control" value="<?php echo isset($data->name)?htmlentities($data->name):'' ?>">
+                <input type="text" id="name" name="name" class="form-control" value="<?php echo isset($data->name)?$data->name:'' ?>">
             </div>
             <div class="form-group">
                 <label>Modul *</label>

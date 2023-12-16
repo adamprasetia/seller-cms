@@ -12,6 +12,10 @@
                 <input type="text" id="title" name="title" class="form-control" value="<?php echo isset($data->title)?$data->title:'' ?>">
             </div>
             <div class="form-group">
+                <label>Deskripsi</label>
+                <textarea type="text" id="desc" rows="5" name="desc" class="form-control"><?php echo isset($data->desc)?$data->desc:'' ?></textarea>
+            </div>
+            <div class="form-group">
                 <label>Image *</label>
                 <input type="button" name="choose" class="btn btn-default btn-sm btn-dialog" value="Pilih Image" data-title="Pilih Image Store" data-target="image_item" data-url="<?php echo base_url('photo').'?modals=true'; ?>">
                 <div class="media">
