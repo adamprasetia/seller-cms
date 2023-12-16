@@ -48,6 +48,7 @@ class Item extends MY_Controller {
 		$cover		= $this->input->post('cover');
 		$cover_mobile		= $this->input->post('cover_mobile');
 		$desc		= $this->input->post('desc');
+		$teaser		= $this->input->post('teaser');
 		$keyword		= $this->input->post('keyword');
 		$category_id		= $this->input->post('category_id');
 		$rank		= $this->input->post('rank');

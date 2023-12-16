@@ -27,9 +27,14 @@
                 <small>Note : Deskripsi yang baik akan memudahkan user mengakses website kamu lewat pencarian search engine (google)</small>
             </div>
             <div class="form-group">
+                <label>Teaser</label>
+                <textarea type="text" id="teaser" rows="5" name="teaser" class="form-control"><?php echo isset($data->teaser)?$data->teaser:'' ?></textarea>
+                <small>Note : Gunakan Teaser yang relevant sehingga memudahkan orang-orang untuk menemukan website kamu lewat pencarian search engine (google)</small>
+            </div>
+            <div class="form-group">
                 <label>Keyword</label>
                 <textarea type="text" id="keyword" rows="5" name="keyword" class="form-control"><?php echo isset($data->keyword)?$data->keyword:'' ?></textarea>
-                <small>Note : Gunakan comma (,) untuk pemisah antar kata, gunakan kata kunci yang tepat supaya cocok dengan kata kunci pencarian di search engine (google)</small>
+                <small>Note : Gunakan comma (,) untuk pemisah antar kata, gunakan kata kunci yang relevant yang biasa digunakan orang-orang menggunakan kata kunci pencarian di search engine (google)</small>
             </div>
             <div class="form-group">
                 <label>Harga</label>
