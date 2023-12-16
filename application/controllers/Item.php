@@ -50,9 +50,7 @@ class Item extends MY_Controller {
 		$desc		= $this->input->post('desc');
 		$category_id		= $this->input->post('category_id');
 		$rank		= $this->input->post('rank');
-		$new		= $this->input->post('new');
-		$electrified		= $this->input->post('electrified');
-		$racing		= $this->input->post('racing');
+		$headline		= $this->input->post('headline');
 		$price		= $this->input->post('price');
 		$video		= $this->input->post('video');
 		$gallery		= $this->input->post('gallery');

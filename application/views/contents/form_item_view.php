@@ -19,6 +19,7 @@
                         <input type="hidden" id="image_item" name="image" value="<?php echo isset($data->image)?$data->image:''; ?>">
                     </div>
                 </div>
+                <small>Note : Image yang akan digunakan pada thumbnail produk, keseragaman ukuran image akan membuat tampilan lebih baik</small>
             </div>
             <div class="form-group">
                 <label>Deskripsi</label>
@@ -40,54 +41,26 @@
             <div class="form-group">
                 <label>Ranking</label>
                 <input type="number" id="rank" name="rank" class="form-control" value="<?php echo isset($data->rank)?$data->rank:'' ?>">
+                <small>Note : Ranking akan menentukan posisi urutan produk yang ditampilkan, semakin kecil akan semakin diatas </small>
             </div>
             <div class="form-group">
-                <label>New</label>
+                <label>Headline</label>
                 <div class="radio">
                     <label>
-                    <input type="radio" name="new" value="1" <?php echo isset($data->new) && $data->new=='1'?'checked':'' ?>>
+                    <input type="radio" name="headline" value="Y" <?php echo isset($data->headline) && $data->headline=='Y'?'checked':'' ?>>
                         Ya
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                    <input type="radio" name="new" value="0" <?php echo isset($data->new) && $data->new=='0'?'checked':'' ?>>
+                    <input type="radio" name="headline" value="N" <?php echo isset($data->headline) && $data->headline=='N'?'checked':'' ?>>
                         Tidak
                     </label>
                 </div>
+                <small>Note : Jika 'Ya' maka produk akan ditampilkan di headline</small>
             </div>
             <div class="form-group">
-                <label>Electrified</label>
-                <div class="radio">
-                    <label>
-                    <input type="radio" name="electrified" value="1" <?php echo isset($data->electrified) && $data->electrified=='1'?'checked':'' ?>>
-                        Ya
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                    <input type="radio" name="electrified" value="0" <?php echo isset($data->electrified) && $data->electrified=='0'?'checked':'' ?>>
-                        Tidak
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>Racing</label>
-                <div class="radio">
-                    <label>
-                    <input type="radio" name="racing" value="1" <?php echo isset($data->racing) && $data->racing=='1'?'checked':'' ?>>
-                        Ya
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                    <input type="radio" name="racing" value="0" <?php echo isset($data->racing) && $data->racing=='0'?'checked':'' ?>>
-                        Tidak
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>Cover</label>
+                <label>Headline Image</label>
                 <input type="button" name="choose" class="btn btn-default btn-sm btn-dialog" value="Pilih Cover" data-title="Select Photo item" data-target="cover_item" data-url="<?php echo base_url('photo').'?modals=true'; ?>">
                 <div class="media">
                     <div class="media-left">
@@ -95,9 +68,10 @@
                         <input type="hidden" id="cover_item" name="cover" value="<?php echo isset($data->cover)?$data->cover:''; ?>">
                     </div>
                 </div>
+                <small>Note : Image yang akan digunakan di headline versi Desktop, akan bagus jika menggunakan image yang landscape</small>
             </div>
             <div class="form-group">
-                <label>Cover versi Mobile</label>
+                <label>Headline Image (Mobile Version)</label>
                 <input type="button" name="choose" class="btn btn-default btn-sm btn-dialog" value="Pilih Cover" data-title="Select Photo item" data-target="cover_mobile_item" data-url="<?php echo base_url('photo').'?modals=true'; ?>">
                 <div class="media">
                     <div class="media-left">
@@ -105,6 +79,7 @@
                         <input type="hidden" id="cover_mobile_item" name="cover_mobile" value="<?php echo isset($data->cover_mobile)?$data->cover_mobile:''; ?>">
                     </div>
                 </div>
+                <small>Note : Image yang akan digunakan di headline versi Mobile, akan bagus jika menggunakan image yang portrait</small>
             </div>
             <div class="form-group">
                 <label>Video</label>
