@@ -24,6 +24,12 @@
             <div class="form-group">
                 <label>Deskripsi</label>
                 <textarea type="text" id="desc" rows="5" name="desc" class="form-control"><?php echo isset($data->desc)?$data->desc:'' ?></textarea>
+                <small>Note : Deskripsi yang baik akan memudahkan user mengakses website kamu lewat pencarian search engine (google)</small>
+            </div>
+            <div class="form-group">
+                <label>Keyword</label>
+                <textarea type="text" id="keyword" rows="5" name="keyword" class="form-control"><?php echo isset($data->keyword)?$data->keyword:'' ?></textarea>
+                <small>Note : Gunakan comma (,) untuk pemisah antar kata, gunakan kata kunci yang tepat supaya cocok dengan kata kunci pencarian di search engine (google)</small>
             </div>
             <div class="form-group">
                 <label>Harga</label>
@@ -64,7 +70,7 @@
                 <input type="button" name="choose" class="btn btn-default btn-sm btn-dialog" value="Pilih Cover" data-title="Select Photo item" data-target="cover_item" data-url="<?php echo base_url('photo').'?modals=true'; ?>">
                 <div class="media">
                     <div class="media-left">
-                        <img id="cover_item_img" src="<?php echo !empty($data->cover)?config_item('base_domain').$data->cover:''; ?>" class="media-object" style="width: 300px;height: auto;border-radius: 10px;box-shadow: 0 1px 3px rgba(0,0,0,.15);background-color:#3c8dbc">
+                        <img id="cover_item_img" src="<?php echo !empty($data->cover)?base_url_fe().$data->cover:''; ?>" class="media-object" style="width: 300px;height: auto;border-radius: 10px;box-shadow: 0 1px 3px rgba(0,0,0,.15);background-color:#3c8dbc">
                         <input type="hidden" id="cover_item" name="cover" value="<?php echo isset($data->cover)?$data->cover:''; ?>">
                     </div>
                 </div>
@@ -75,7 +81,7 @@
                 <input type="button" name="choose" class="btn btn-default btn-sm btn-dialog" value="Pilih Cover" data-title="Select Photo item" data-target="cover_mobile_item" data-url="<?php echo base_url('photo').'?modals=true'; ?>">
                 <div class="media">
                     <div class="media-left">
-                        <img id="cover_mobile_item_img" src="<?php echo !empty($data->cover_mobile)?config_item('base_domain').$data->cover_mobile:''; ?>" class="media-object" style="width: 300px;height: auto;border-radius: 10px;box-shadow: 0 1px 3px rgba(0,0,0,.15);background-color:#3c8dbc">
+                        <img id="cover_mobile_item_img" src="<?php echo !empty($data->cover_mobile)?base_url_fe().$data->cover_mobile:''; ?>" class="media-object" style="width: 300px;height: auto;border-radius: 10px;box-shadow: 0 1px 3px rgba(0,0,0,.15);background-color:#3c8dbc">
                         <input type="hidden" id="cover_mobile_item" name="cover_mobile" value="<?php echo isset($data->cover_mobile)?$data->cover_mobile:''; ?>">
                     </div>
                 </div>
