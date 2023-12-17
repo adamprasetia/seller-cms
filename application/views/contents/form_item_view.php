@@ -1,5 +1,5 @@
 <form id="form_data" method="post">
-    <div class="box box-default" style="position: sticky;top: 50px;z-index: 99999;">
+    <div class="box box-default" style="position: sticky;top: 50px;z-index: 9;">
         <div class="box-footer">
             <button type="button" class="btn_action btn btn-primary" data-redirect="<?php echo base_url('item/index').get_query_string() ?>" data-action="<?php echo $action ?>" data-form="#form_data" data-idle="<i class='fa fa-save'></i> Simpan" data-process="Menyimpan..."><i class='fa fa-save'></i> Simpan</button>
             <button type="button" class="btn_close btn btn-default" data-redirect="<?php echo base_url('item/index').get_query_string() ?>"><i class='fa fa-close'></i> Kembali</button>
