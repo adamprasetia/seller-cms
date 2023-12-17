@@ -65,6 +65,7 @@ class Item extends MY_Controller {
 			'cover' => $cover,
 			'cover_mobile' => $cover_mobile,
 			'desc' => $desc,
+			'teaser' => $teaser,
 			'keyword' => $keyword,
 			'category_id' => $category_id,
 			'rank' => $rank,
