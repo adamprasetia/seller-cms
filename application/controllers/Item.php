@@ -55,7 +55,7 @@ class Item extends MY_Controller {
 		$headline		= $this->input->post('headline');
 		$price		= $this->input->post('price');
 		$video		= $this->input->post('video');
-		$hidden		= $this->input->post('hidden');
+		$active		= $this->input->post('active');
 		$gallery		= $this->input->post('gallery');
 
 		$data = array(
@@ -73,7 +73,7 @@ class Item extends MY_Controller {
 			'headline' => $headline,
 			'price' => $price,
 			'video' => $video,
-			'hidden' => $hidden,
+			'active' => $active,
 		);
 		if(!empty($gallery)){
 			$data['gallery'] = json_encode($gallery);
