@@ -35,7 +35,7 @@
 </head>
 
 <body class="skin-blue-light fixed sidebar-mini">
-    <div class="wrapper">
+    <div class="wrapper" style="overflow:visible visible;">
 
         <!-- Main Header -->
         <header class="main-header">
