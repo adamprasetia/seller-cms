@@ -64,7 +64,7 @@
                 </div>
                 <div class="radio">
                     <label>
-                    <input type="radio" name="headline" value="N" <?php echo isset($data->headline) && $data->headline=='N'?'checked':'' ?>>
+                    <input type="radio" name="headline" value="N" <?php echo (isset($data->headline) && $data->headline=='N') || empty($data->headline)?'checked':'' ?>>
                         Tidak
                     </label>
                 </div>
