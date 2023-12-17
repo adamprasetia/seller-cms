@@ -1,5 +1,11 @@
-<div class="box box-default">
-    <form id="form_data" method="post">
+<form id="form_data" method="post">
+    <div class="box box-default">
+        <div class="box-footer">
+            <button type="button" class="btn_action btn btn-primary" data-redirect="<?php echo base_url('item/index').get_query_string() ?>" data-action="<?php echo $action ?>" data-form="#form_data" data-idle="<i class='fa fa-save'></i> Simpan" data-process="Menyimpan..."><i class='fa fa-save'></i> Simpan</button>
+            <button type="button" class="btn_close btn btn-default" data-redirect="<?php echo base_url('item/index').get_query_string() ?>"><i class='fa fa-close'></i> Kembali</button>
+        </div>
+    </div>
+    <div class="box box-default">
         <div class="box-header with-border">
             <div class="pull-left">
                 <h4><strong>FORM ITEM</strong></h4>
@@ -144,5 +150,5 @@
             <button type="button" class="btn_action btn btn-primary" data-redirect="<?php echo base_url('item/index').get_query_string() ?>" data-action="<?php echo $action ?>" data-form="#form_data" data-idle="<i class='fa fa-save'></i> Simpan" data-process="Menyimpan..."><i class='fa fa-save'></i> Simpan</button>
             <button type="button" class="btn_close btn btn-default" data-redirect="<?php echo base_url('item/index').get_query_string() ?>"><i class='fa fa-close'></i> Kembali</button>
         </div>
-    </form>
-</div>
+    </div>
+</form>

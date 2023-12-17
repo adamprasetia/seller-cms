@@ -57,7 +57,7 @@
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
-                        <li><a href="">STORE: <strong><?php echo $this->session_login['session_store']['title'] ?></strong></a></li>
+                        <li class="hidden-xs"><a href="">STORE: <strong><?php echo $this->session_login['session_store']['title'] ?></strong></a></li>
 
                         <!-- User Account Menu -->
                         <li class="dropdown user user-menu">
