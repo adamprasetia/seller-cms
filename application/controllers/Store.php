@@ -49,6 +49,7 @@ class Store extends MY_Controller {
 		$keyword 		= $this->input->post('keyword');
 		$domain 		= $this->input->post('domain');
 		$logo 		= $this->input->post('logo');
+		$icon 		= $this->input->post('icon');
 		$image 		= $this->input->post('image');
 		$phone 		= $this->input->post('phone');
 		$pic 		= $this->input->post('pic');
@@ -58,6 +59,7 @@ class Store extends MY_Controller {
 			'desc' => $desc,
 			'domain' => $domain,
 			'logo' => $logo,
+			'icon' => $icon,
 			'image' => $image,
 			'phone' => $phone,
 			'pic' => $pic,

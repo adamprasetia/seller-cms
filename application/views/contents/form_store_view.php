@@ -21,6 +21,16 @@
                 <small>Note : Gunakan comma (,) untuk pemisah antar kata, gunakan kata kunci yang tepat supaya cocok dengan kata kunci pencarian di search engine (google)</small>
             </div>
             <div class="form-group">
+                <label>Icon</label>
+                <input type="button" name="choose" class="btn btn-default btn-sm btn-dialog" value="Pilih Icon" data-title="Pilih Icon Store" data-target="icon_item" data-url="<?php echo base_url('photo').'?modals=true'; ?>">
+                <div class="media">
+                    <div class="media-left">
+                        <img id="icon_item_img" src="<?php echo !empty($data->icon)?base_url_fe().'/'.$data->icon:''; ?>" class="media-object" style="width: 300px;height: auto;border-radius: 10px;box-shadow: 0 1px 3px rgba(0,0,0,.15);background-color:#3c8dbc">
+                        <input type="hidden" id="icon_item" name="icon" value="<?php echo isset($data->icon)?$data->icon:''; ?>">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
                 <label>Logo</label>
                 <input type="button" name="choose" class="btn btn-default btn-sm btn-dialog" value="Pilih Logo" data-title="Pilih Logo Store" data-target="logo_item" data-url="<?php echo base_url('photo').'?modals=true'; ?>">
                 <div class="media">
