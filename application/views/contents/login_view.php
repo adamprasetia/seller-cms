@@ -23,7 +23,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="http://www.visiblestory.id"><b><?php echo config_item('app_name') ?></b>CMS</a>
+    <a href="#"><b><?php echo config_item('app_name') ?></b>CMS</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
