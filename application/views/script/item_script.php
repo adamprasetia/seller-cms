@@ -3,6 +3,8 @@ $(document).ready(function () {
     tinymce.init({
     selector: '#desc',
     object_resizing: false,
+    toolbar_sticky:true,
+    toolbar_sticky_offset: 110,
     height: 500,
     menubar: false,
     resize: true,
