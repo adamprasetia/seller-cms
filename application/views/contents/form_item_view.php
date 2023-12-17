@@ -132,7 +132,7 @@
                 </div>
                 <div class="radio">
                     <label>
-                    <input type="radio" name="active" value="N" <?php echo (isset($data->active) && $data->active=='N') || empty($data->headline)?'checked':'' ?>>
+                    <input type="radio" name="active" value="N" <?php echo (isset($data->active) && $data->active=='N') || empty($data->active)?'checked':'' ?>>
                         Tidak
                     </label>
                 </div>
