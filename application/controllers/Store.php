@@ -57,6 +57,7 @@ class Store extends MY_Controller {
 		$data = array(
 			'title' => $title,
 			'desc' => $desc,
+			'keyword' => $keyword,
 			'domain' => $domain,
 			'logo' => $logo,
 			'icon' => $icon,
