@@ -84,7 +84,7 @@ class Photo extends MY_Controller {
 		}
 		$config['upload_path'] = $upload_path;
 		$config['file_name'] = 'ori_'.$filename;
-        $config['allowed_types'] = 'jpeg|jpg|png|webp';
+        $config['allowed_types'] = 'jpeg|jpg|png|webp|ico';
         $config['max_size'] = 6014;
         $config['overwrite'] = false;
 
