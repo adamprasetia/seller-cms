@@ -36,7 +36,6 @@
 
     <script type="text/javascript">
     var base_url = "<?php echo base_url(); ?>";
-    var base_domain = "<?php echo config_item('base_domain') ?>";
     </script>
     <!-- jQuery 3 -->
     <script src="<?php echo base_url('assets/').'js/jquery.min.js';?>"></script>

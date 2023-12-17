@@ -23,19 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$protocol = 'http';
-if (in_array($_SERVER['HTTP_HOST'], ['simad.adamprasetia.website', 'adamprasetia.website','dealertoyotacianjursukabumi.com','www.dealertoyotacianjursukabumi.com'])) {
-    $protocol = 'https';
-}
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https" : "http";
 $root = $protocol."://".$_SERVER['HTTP_HOST'];
 $root .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
  
-$config['base_url']         = "$root";
-$config['base_domain'] = str_replace('/cms/', '/', $config['base_url']);
-
-$config['assets_editor'] = $config['base_url'] . 'assets/';
-$config['assets_path'] = str_replace(array('/cms', '\cms'), '', FCPATH).'assets/';
-$config['assets'] = $config['base_domain'] . 'assets/';
+$config['base_url']         = $root;
 
 
 
