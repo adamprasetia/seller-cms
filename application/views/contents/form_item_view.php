@@ -121,6 +121,24 @@
                     }
                 } ?>
             </div>
+
+            <div class="form-group">
+                <label>Aktif</label>
+                <div class="radio">
+                    <label>
+                    <input type="radio" name="active" value="Y" <?php echo isset($data->active) && $data->active=='Y'?'checked':'' ?>>
+                        Ya
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                    <input type="radio" name="active" value="N" <?php echo (isset($data->active) && $data->active=='N') || empty($data->headline)?'checked':'' ?>>
+                        Tidak
+                    </label>
+                </div>
+                <small>Note : Jika 'Ya' maka produk akan ditampilkan di list produk</small>
+            </div>
+
         </div>  
         <div class="box-footer">
             <button type="button" class="btn_action btn btn-primary" data-redirect="<?php echo base_url('item/index').get_query_string() ?>" data-action="<?php echo $action ?>" data-form="#form_data" data-idle="<i class='fa fa-save'></i> Simpan" data-process="Menyimpan..."><i class='fa fa-save'></i> Simpan</button>
