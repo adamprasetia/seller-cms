@@ -210,6 +210,6 @@ function generateRandomString($length = 10) {
 }
 function base_url_fe() {
     $base_url = base_url();
-    $base_url = str_replace('seller-cms','seller-fe', $base_url);
+    $base_url = str_replace('seller_cms','seller_fe', $base_url);
     return $base_url;
 }
