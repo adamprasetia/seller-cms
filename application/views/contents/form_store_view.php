@@ -62,6 +62,10 @@
                 <label>PIC</label>
                 <input type="text" id="pic" name="pic" class="form-control" value="<?php echo isset($data->pic)?$data->pic:'' ?>">
             </div>
+            <div class="form-group">
+                <label>Alamat</label>
+                <textarea type="text" id="address" rows="5" name="address" class="form-control"><?php echo isset($data->address)?$data->address:'' ?></textarea>
+            </div>
         </div>
         <div class="box-footer">
             <button type="button" class="btn_action btn btn-primary" data-redirect="<?php echo base_url($table.'/index').get_query_string() ?>" data-action="<?php echo $action ?>" data-form="#form_data" data-idle="<i class='fa fa-save'></i> Simpan" data-process="Menyimpan..."><i class='fa fa-save'></i> Simpan</button>
