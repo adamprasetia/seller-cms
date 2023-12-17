@@ -123,16 +123,16 @@
             </div>
 
             <div class="form-group">
-                <label>Aktif</label>
+                <label>Hide</label>
                 <div class="radio">
                     <label>
-                    <input type="radio" name="active" value="Y" <?php echo isset($data->active) && $data->active=='Y'?'checked':'' ?>>
+                    <input type="radio" name="hidden" value="Y" <?php echo isset($data->hidden) && $data->hidden=='Y'?'checked':'' ?>>
                         Ya
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                    <input type="radio" name="active" value="N" <?php echo (isset($data->active) && $data->active=='N') || empty($data->active)?'checked':'' ?>>
+                    <input type="radio" name="hidden" value="N" <?php echo (isset($data->hidden) && $data->hidden=='N') || empty($data->hidden)?'checked':'' ?>>
                         Tidak
                     </label>
                 </div>
