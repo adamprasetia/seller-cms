@@ -66,6 +66,23 @@
                 <label>Alamat</label>
                 <textarea type="text" id="address" rows="5" name="address" class="form-control"><?php echo isset($data->address)?$data->address:'' ?></textarea>
             </div>
+            <div class="form-group">
+                <label>Theme</label>
+                <div class="radio">
+                    <label>
+                    <input type="radio" name="active" value="dark" <?php echo isset($data->theme) && $data->theme=='dark'?'checked':'' ?>>
+                        Dark
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                    <input type="radio" name="active" value="light" <?php echo (isset($data->theme) && $data->theme=='light')?'checked':'' ?>>
+                        Light
+                    </label>
+                </div>
+                <small>Note : Jika 'Ya' maka produk akan ditampilkan di list produk</small>
+            </div>
+
         </div>
         <div class="box-footer">
             <button type="button" class="btn_action btn btn-primary" data-redirect="<?php echo !empty($redirect)?$redirect:base_url($table.'/index').get_query_string() ?>" data-action="<?php echo $action ?>" data-form="#form_data" data-idle="<i class='fa fa-save'></i> Simpan" data-process="Menyimpan..."><i class='fa fa-save'></i> Simpan</button>
