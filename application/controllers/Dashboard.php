@@ -35,4 +35,16 @@ class Dashboard extends MY_Controller {
 		redirect();
 	}
 
+	public function store()
+	{
+		$store_id = $this->session_login['session_store']['id'];
+		$content['action'] = site_url("store/edit/".$store_id);
+		$content['redirect'] = base_url('dashboard/store');
+		$content['table'] = "store";
+		$content['title'] = "TOKO";
+		$content['data'] = $this->db->where('id', $store_id)->get('store')->row();
+		$data['content'] = $this->load->view('contents/form_store_view', $content, true);
+		$this->load->view('template_view', $data);
+	}
+
 }
