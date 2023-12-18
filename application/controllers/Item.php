@@ -90,8 +90,7 @@ class Item extends MY_Controller {
 
 		if(!empty($_FILES['pdf']['name'])){
 			// upload
-			$upload_path = FCPATH.'assets/pdf';
-			$upload_path = str_replace(array('cms/','\cms'), '', $upload_path);	
+			$upload_path = DIR.'/seller_fe/assets/pdf/'.$this->session_login['session_store']['id'];
 			if (!is_dir($upload_path)) {
 				if(!@mkdir($upload_path, 0755, true)){
 					$error = error_get_last();

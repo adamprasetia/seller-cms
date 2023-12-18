@@ -75,7 +75,7 @@ class Photo extends MY_Controller {
 
 	private function upload_photo($filename = '')
 	{
-		$upload_path = DIR.'/seller_fe/assets/photo/'.date('Y/m/d/');
+		$upload_path = DIR.'/seller_fe/assets/photo/'.$this->session_login['session_store']['id'].'/'.date('Y/m/d/');
 		if (!is_dir($upload_path)) {
 			if(!@mkdir($upload_path, 0755, true)){
 				$error = error_get_last();
