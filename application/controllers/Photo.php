@@ -58,7 +58,7 @@ class Photo extends MY_Controller {
 				$result_upload = $this->upload_photo($filename);
 				if ($result_upload) {
 					$data = array(
-						'url' => 'assets/photo/'.date('Y/m/d/').'ori_'.$filename,
+						'url' => 'assets/photo/'.$this->session_login['session_store']['id'].'/'.date('Y/m/d/').'ori_'.$filename,
 						'created_by' => $this->session_login['id'],
 						'store_id'=>$this->session_login['session_store']['id']
 					);

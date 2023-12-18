@@ -113,7 +113,7 @@ class Item extends MY_Controller {
 			else
 			{
 				$upload_data = $this->upload->data();
-				$data['pdf'] = $upload_data['file_name'];
+				$data['pdf'] = 'assets/pdf/'.$this->session_login['session_store']['id'].'/'.$upload_data['file_name'];
 			}
 		}
 
