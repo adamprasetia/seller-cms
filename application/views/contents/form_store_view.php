@@ -70,13 +70,13 @@
                 <label>Theme</label>
                 <div class="radio">
                     <label>
-                    <input type="radio" name="active" value="dark" <?php echo isset($data->theme) && $data->theme=='dark'?'checked':'' ?>>
+                    <input type="radio" name="theme" value="dark" <?php echo isset($data->theme) && $data->theme=='dark'?'checked':'' ?>>
                         Dark
                     </label>
                 </div>
                 <div class="radio">
                     <label>
-                    <input type="radio" name="active" value="light" <?php echo (isset($data->theme) && $data->theme=='light')?'checked':'' ?>>
+                    <input type="radio" name="theme" value="light" <?php echo (isset($data->theme) && $data->theme=='light')?'checked':'' ?>>
                         Light
                     </label>
                 </div>
