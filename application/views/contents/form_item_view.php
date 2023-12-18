@@ -110,7 +110,7 @@
                 <label>Pdf</label>
                 <input type="file" name="pdf" id="pdf" class="form-control">
                 <?php if(!empty($data->pdf)) { ?>
-                    <iframe src="<?php echo base_url_fe().'assets/pdf/'.$data->pdf ?>" frameborder="0"></iframe>
+                    <iframe src="<?php echo base_url_fe().'/'.$data->pdf ?>" frameborder="0"></iframe>
                 <?php } ?>
             </div>
             <div class="form-group">
