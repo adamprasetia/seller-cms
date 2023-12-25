@@ -52,6 +52,7 @@ class Store extends MY_Controller {
 		$icon 		= $this->input->post('icon');
 		$image 		= $this->input->post('image');
 		$phone 		= $this->input->post('phone');
+		$email 		= $this->input->post('email');
 		$pic 		= $this->input->post('pic');
 		$address 		= $this->input->post('address');
 		$theme 		= $this->input->post('theme');
@@ -65,6 +66,7 @@ class Store extends MY_Controller {
 			'icon' => $icon,
 			'image' => $image,
 			'phone' => $phone,
+			'email' => $email,
 			'pic' => $pic,
 			'address' => $address,
 			'theme' => $theme,

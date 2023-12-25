@@ -59,6 +59,10 @@
                 <input type="text" id="phone" name="phone" class="form-control" value="<?php echo isset($data->phone)?$data->phone:'' ?>">
             </div>
             <div class="form-group">
+                <label>Email</label>
+                <input type="text" id="email" name="email" class="form-control" value="<?php echo isset($data->email)?$data->email:'' ?>">
+            </div>
+            <div class="form-group">
                 <label>PIC</label>
                 <input type="text" id="pic" name="pic" class="form-control" value="<?php echo isset($data->pic)?$data->pic:'' ?>">
             </div>
