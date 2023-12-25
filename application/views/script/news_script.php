@@ -11,7 +11,7 @@ $(document).ready(function () {
     plugins: ['lists hr code media paste link table photos quickbars editphototext fullscreen'],
     relative_urls: false,
     remove_script_host: false,
-    toolbar: 'bold italic underline | bullist numlist | table | undo redo | link | fullscreen photos | hr | code | formatselect fontsizeselect',
+    toolbar: 'bold italic underline | bullist numlist | table | undo redo | link | fullscreen photos | hr | code | formatselect fontsizeselect | alignleft aligncenter alignright alignjustify',
     quickbars_insert_toolbar: 'photos',
     quickbars_image_toolbar: 'editphototext',
     paste_as_text:true,
